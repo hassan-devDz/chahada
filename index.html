@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اليوم العالمي للمعلم</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body style="direction: rtl;">
+    <div class=" container-fluid container-md p-3 my-5">
+        <!-- Button trigger modal -->
+        <img src="img/logo_black_2.png" alt="" class=" d-block mx-auto w-50 py-3 min">
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen-xl-down">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <canvas id="canvas"></canvas>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                        <button type="button" class="btn btn-primary" onclick="save()">حفظ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" text-center display-6">
+
+            أخي المعلم ..... أختي المعلمه.....<br> بمناسبة يومكم العالمي 2020م و إيمانا من وزارتكم... وزارة التربية الوطنية بدوركم الرائد<br> يسرنا أن نهديكم هذه البطاقه ولك أن تهديها لمن ترى من زملاء المهنة ومعلمي الناس الخير... <br>دمتم ودام نفعكم.
+        </div>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-3 position-relative">
+                <label for="validationTooltip01" class="form-label">الاسم</label>
+                <input type="text" class="form-control" id="validationTooltip01" value="" required>
+                <div class="valid-tooltip">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-3 position-relative">
+                <label for="validationTooltip02" class="form-label">اللقب</label>
+                <input type="text" class="form-control" id="validationTooltip02" value="" required>
+                <div class="valid-tooltip">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-3 position-relative">
+                <label for="validationTooltip03" class="form-label">الجنس</label>
+                <select class="form-select" id="validationTooltip03" required>
+                    <option selected disabled value="">اختر</option>
+                    <option>ذكر</option>
+                    <option>أنثى</option>
+                </select>
+                <div class="invalid-tooltip">
+                    Please select a valid state.
+                </div>
+            </div>
+            <div class="col-md-3 position-relative">
+                <label for="validationTooltip04" class="form-label">الرتبة</label>
+                <select class="form-select" id="validationTooltip04" required>
+                    <option selected disabled value="">اختر</option>
+                    <option>أستاذ التعليم الابتدائي</option>
+                    <option>أستاذ التعليم المتوسط</option>
+                    <option>أستاذ التعليم الثانوي</option>
+                </select>
+                <div class="invalid-tooltip">
+                    Please select a valid state.
+                </div>
+            </div>
+
+            <div class="col-12">
+                <button id="click" class="btn btn-primary" type="">اطبع</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/fontfaceobserver.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

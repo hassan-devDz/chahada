@@ -1,0 +1,25 @@
+@page {
+    size: A4 landscape;
+}
+
+html,
+body {
+    font-family: 'Lateef', sans-serif;
+    font-weight: 400;
+}
+
+#canvas {
+    width: 100%;
+}
+
+button,
+form,
+.form-select,
+.form-control {
+    font-size: 1.5rem !important;
+}
+
+.min {
+    min-width: 270px;
+    max-width: 470px;
+}
